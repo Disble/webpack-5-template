@@ -36,6 +36,7 @@
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#installation">Installation</a></li>
+        <li><a href="#postinstall">Postinstall</a></li>
       </ul>
     </li>
     <li><a href="#roadmap">Roadmap</a></li>
@@ -85,6 +86,16 @@ To get a local copy up and running follow these simple steps.
    npm install
    ```
 
+### Postinstall
+
+1. Create `.env` from `.env.example`
+   ```sh
+   cp .env.example .env
+   ```
+2. Fill all fields in `.env`
+   ```sh
+   TEXTO_RANDOM=secret text
+   ```
 
 
 <!-- ROADMAP -->

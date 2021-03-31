@@ -1,0 +1,11 @@
+{
+  "name": "webpack-5-template",
+  "version": "0.1.0",
+  "description": "A webpack 5 template for JS, CSS, HTML",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Disble <decoder@hotmail.es>",
+  "license": "MIT"
+}

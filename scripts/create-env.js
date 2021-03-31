@@ -2,4 +2,4 @@
 // que deben estar en produccion mismo
 const fs = require('fs');
 
-fs.writeFileSync('./.env', `API=${process.env.API}\n`);
+fs.writeFileSync('./.env', `API=${process.env.TEXTO_RANDOM}\n`);

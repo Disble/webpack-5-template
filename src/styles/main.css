@@ -102,6 +102,10 @@ html {
   text-align: center;
 }
 
+.gray-text {
+  color: #888;
+}
+
 .img-hello {
   max-width: 300px;
 }

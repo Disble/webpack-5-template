@@ -2,11 +2,14 @@
 import sum from '../utils/sum.js';
 import { onMount } from '../utils/lifecycle.js';
 import randomNumber from '../utils/randomNumber.js';
+import Game from '@components/game.js';
 import hello from '@images/hello.svg';
 
 const Template = async () => {
   const res = sum(1, 4);
   const TEXTO_RANDOM = process.env.TEXTO_RANDOM;
+  const game = new Game({ name: 'Marbles Real Physics', version: 'v1.0.0' });
+  console.log(game.log());
 
   onMount(() => {
     document.getElementById('btnSum')
@@ -20,7 +23,7 @@ const Template = async () => {
   });
 
 
-  const view = /**html */`
+  const view = /*html*/`
     <div class="container text-center">
       <h1>Hola</h1>
       <p>Este es solo texto de prueba</p>
@@ -29,6 +32,7 @@ const Template = async () => {
       <p>Y aquí va una imagen</p>
       <img class="img-hello" src="${hello}" alt="hello"/>
       <p>Y una variable de entorno: <i class="gray-text">${TEXTO_RANDOM}</i></p>
+      <p>Resultado de la carpteta components: ${game.log()}</p>
     </div>
   `;
   return view;
